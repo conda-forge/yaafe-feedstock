@@ -14,13 +14,13 @@ source:
 build:
   rpaths:
     - lib/
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
   build:
     - python
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
     - gcc
     - eigen
     - fftw
@@ -32,7 +32,7 @@ requirements:
 
   run:
     - python
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
     - libgcc
     - eigen
     - fftw
