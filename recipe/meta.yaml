@@ -14,7 +14,7 @@ source:
 build:
   rpaths:
     - lib/
-  number: 2
+  number: 0
   skip: true  # [win]
 
 requirements:
