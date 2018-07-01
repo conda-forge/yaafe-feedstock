@@ -14,26 +14,27 @@ source:
 build:
   rpaths:
     - lib/
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
+    - cmake
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - python
-    - hdf5 1.8.18|1.8.18.*
-    - gcc
+    - hdf5
     - eigen
     - fftw
     - libsndfile
     - mpg123
     - argtable2
-    - cmake
     - lapack
 
   run:
     - python
-    - hdf5 1.8.18|1.8.18.*
-    - libgcc
+    - hdf5
     - eigen
     - fftw
     - libsndfile
