@@ -4,7 +4,7 @@ mkdir build_yaafe
 cd build_yaafe
 
 if [[ "$c_compiler" == "gcc" ]]; then
-  export PATH="${PATH}:${BUILD_PREFIX}/${HOST}/sysroot/usr/lib"
+  export PATH="${PATH}:${BUILD_PREFIX}/${HOST}/sysroot/usr/lib:${BUILD_PREFIX}/${HOST}/sysroot/usr/include"
 fi
 
 cmake \
