@@ -24,7 +24,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - libblas
-    - libcblas
+    - liblapack
     - python
     - hdf5
     - eigen
@@ -32,7 +32,6 @@ requirements:
     - libsndfile
     - mpg123
     - argtable2
-
   run:
     - python
     - hdf5
